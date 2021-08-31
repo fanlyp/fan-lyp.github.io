@@ -23,11 +23,11 @@ Enter file in which to save the key (/c/Users/x、/.ssh/id_rsa):
 ```
 这是生成了三个文件，打开id_rsa.pub，复制出来其中的内容。
 
-| Site Name    | file name                                          |
+| Site Name    | URL                                                |
 | ------------ | ---------------------------------------------------|
-|      file    |                      id_rsa                        |
-|      file    |                      id_rsa.pub                    |
-|      file    |                      known_hosts                   |
+| file   | id_rsa           |
+| file    | id_rsa.pub     |
+| file    | known_hosts                 |
 
 登录自己的github账户，在github添加密钥
 
