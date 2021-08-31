@@ -22,6 +22,7 @@ Enter file in which to save the key (/c/Users/x、/.ssh/id_rsa):
 /c/Users/x、/.ssh/id_rsa already exists.
 ```
 这是生成了三个文件，打开id_rsa.pub，复制出来其中的内容。
+
 | Site Name    | file name                                          |
 | ------------ | ---------------------------------------------------|
 |      file    |                      id_rsa                        |
