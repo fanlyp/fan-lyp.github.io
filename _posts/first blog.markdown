@@ -1,33 +1,34 @@
 ---
 layout: post
-title: Hello World - Vno
+title: first blog
 date: 2016-02-16 15:32:24.000000000 +09:00
 ---
 
-#### What's this
+## git 使用
 
-[Vno Jekyll](https://github.com/onevcat/vno-jekyll) is a theme for [Jekyll](http://jekyllrb.com). It is a port of my Ghost theme [vno](https://github.com/onevcat/vno), which is originally developed from [Dale Anthony's Uno](https://github.com/daleanthony/uno).
-
-#### Usage
-
-```bash
-$ git clone https://github.com/onevcat/vno-jekyll.git your_site
-$ cd your_site
-$ bundler install
-$ bundler exec jekyll serve
+### 连接到已有的远程仓库
+重新在git设置一下身份的名字和邮箱
+```java
+git config --global user.name "xxxxxx"
+git config --global user.email "xxx@qq.com"
 ```
+生成ssh
 
-Your site with `Vno Jekyll` enabled should be accessible in http://127.0.0.1:4000.
+```java
+ssh-keygen -t rsa -C "xxx@qq.com"
+会提示（我的已存在了）：
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/x、/.ssh/id_rsa):
+/c/Users/x、/.ssh/id_rsa already exists.
+```
+这是生成了三个文件，打开id_rsa.pub，复制出来其中的内容。
+| Site Name    | file name                                                |
+| ------------ | ---------------------------------------------------|
+|      file    |                      id_rsa                        |
+|      file    |                      id_rsa.pub                    |
+|      file    |                      known_hosts                   |
 
-For more information about Jekyll, please visit [Jekyll's site](http://jekyllrb.com).
-
-#### Configuration
-
-All configuration could be done in `_config.yml`. Remember you need to restart to serve the page when after changing the config file. Everything in the config file should be self-explanatory.
-
-#### Background image and avatar
-
-You could replace the background and avatar image in `assets/images` folder to change them.
+登录自己的github账户，在github添加密钥
 
 #### Sites using Vno
 
